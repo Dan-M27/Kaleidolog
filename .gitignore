@@ -2,9 +2,12 @@
 .bundle
 vendor
 Gemfile.lock
+**/.DS_Store
 
 # Jekyll cache
 .jekyll-cache
+.sass-cache/
+.jekyll-metadata
 _site
 
 # RubyGems
