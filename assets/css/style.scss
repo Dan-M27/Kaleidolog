@@ -1,0 +1,67 @@
+---
+---
+
+@import '{{ site.theme }}';
+
+/* append your custom style below */
+#sidebar {
+    right: 0;
+    height: auto;
+    width: auto;
+    flex-direction: row!important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+    #sidebar .profile-wrapper {
+        display: none;
+    }
+
+    #sidebar .nav {
+        flex-direction: row!important;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #sidebar .sidebar-bottom {
+        width: auto!important;
+        flex-wrap: nowrap!important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+@media (max-width: 849px) {
+    #sidebar {
+        right: auto;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 260px;
+        flex-direction: column!important;
+        flex-wrap: wrap;
+    }
+
+        #sidebar .nav {
+            flex-direction: column!important;
+            flex-wrap: wrap;
+        }
+
+        #sidebar .sidebar-bottom {
+            width: 100%!important;
+        }
+    
+    #main-wrapper {
+        margin-top: 0px!important;
+    }
+}
+
+#main-wrapper, 
+footer {
+    margin-left: 0;
+}
+
+#main-wrapper {
+    margin-top: 65px;
+}
