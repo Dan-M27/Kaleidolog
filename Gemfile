@@ -28,3 +28,7 @@ if RUBY_PLATFORM =~ /linux-musl/
 end
 
 gem "webrick", "~> 1.8"
+# katex
+gem "execjs"
+gem "katex", "~> 0.10.0"
+gem "kramdown-math-katex"
